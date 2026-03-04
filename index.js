@@ -8,8 +8,7 @@
 // const bookingRoute = require("./Routes/Booking");
 // const authRoute = require("./Routes/Auth");
 // const dashboardRoute = require("./Routes/dashboard");
-// const http = require("http");
-// const { Server } = require("socket.io");
+
 
 // dotenv.config();
 // console.log("Mongo URI:", process.env.MONGO_URI);
