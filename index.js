@@ -48,7 +48,7 @@ const cors = require("cors");
 const path = require("path");
 const connectDB = require("./Mongoose/mongoose");
 const addRoomRoute = require("./Routes/AddRoom");
-const bookingRoute = require("./Routes/Booking");
+const bookingRoute = require("./Routes/booking");
 const authRoute = require("./Routes/Auth");
 const dashboardRoute = require("./Routes/dashboard");
 
