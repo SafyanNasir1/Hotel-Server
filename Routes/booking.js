@@ -7,13 +7,11 @@ router.post("/", async (req, res) => {
     const booking = new Booking(req.body);
     await booking.save();
     const review = await generateReview(booking._id);
-     const io = req.app.get("io");
-     io.emit("newBooking", { booking, review });
     res.status(201).json(booking);
   } catch (err) {
     res.status(500).json({ message: "Booking failed" });
   }
-});
+}); 
 
 router.get("/", async (req, res) => {
   try {
