@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Room = require("../models/Room");
-const upload = require("../Multer/Multer");
+const upload = require("../Multer/multer");
 
 router.post("/", upload.array("images", 4), async (req, res) => {
   try {
